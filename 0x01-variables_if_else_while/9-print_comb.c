@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
-* main - prints all the numbers of base 16 in lowercase
-*
-* Description: The numbers are all single digits
-* Return: Always(0) Success
-*/
+ * main - Print single digit numbers in the formart
+ *
+ * Description: Sepaeated by commas
+ * Return: Always(0) Success
+ */
 
 int main(void)
 {
@@ -15,9 +15,10 @@ int main(void)
 	{
 		putchar(i);
 	}
-	for (i = 'a'; i <= 'f'; i++)
+	if (i != 57)
 	{
-		putchar(i);
+		putchar(',');
+		putchar(' ');
 	}
 	putchar('\n');
 
