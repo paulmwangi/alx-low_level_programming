@@ -24,8 +24,7 @@ putchar(j);
 putchar(k);
 if (i == 55 && j == 56 && k == 57)
 {
-putchar('\n');
-return (0);
+break;
 }
 else
 {
