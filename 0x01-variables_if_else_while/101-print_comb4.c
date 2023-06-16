@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - possible combos of 3 digits
+ * main - Entry point, generates all possible combinations of 3 digits
+ *        without repeating any digit.
  *
- * Return (0)
+ * Return: 0 on successful execution
  */
-
 int main(void)
 {
 	int i, j, k;
