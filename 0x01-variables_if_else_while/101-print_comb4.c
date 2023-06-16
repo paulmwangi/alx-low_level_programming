@@ -25,7 +25,7 @@ putchar(k);
 if (i == 55 && j == 56 && k == 57)
 {
 putchar('\n');
-return 0;
+return (0);
 }
 else
 {
@@ -36,5 +36,5 @@ putchar(' ');
 }
 }
 putchar('\n');
-return 0;
+return (0);
 }
