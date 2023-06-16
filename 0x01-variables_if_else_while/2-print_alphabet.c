@@ -1,11 +1,13 @@
 #include <stdio.h>
 
-/**
- * main - alphabet in lowercase, followed by a new line.
- *
- * Always return(0)
- */
 
+/**
+ * main - Entry point.
+ *
+ * This function prints the alphabet in lowercase, followed by a new line.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 char ch = 'a';
