@@ -1,32 +1,36 @@
 #include <stdio.h>
+
 /**
- * main - Generates pairs of numbers that do not repeat.
+ * main - Print all possible combinations of two two-digit numbers
  *
- * Return: 0 on successful execution
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-int i, j;
-for (j = 0; j <= 99; j++)
-{
-for (i = j; i <= 99; i++)
-{
-if (i != j)
-{
-putchar(j / 10 + '0');
-putchar(j % 10 + '0');
-putchar(' ');
-putchar(i / 10 + '0');
-putchar(i % 10 + '0');
-}
-if (j * 100 + i != 9899)
-{
-putchar(',');
-putchar(' ');
-}
-}
-}
-}
-putchar('\n');
-return (0);
+	int i, j;
+
+	for (i = 0; i <= 99; i++)
+	{
+		for (j = i; j <= 99; j++)
+		{
+			if (i != j)
+			{
+				putchar(i / 10 + '0');
+				putchar(i % 10 + '0');
+				putchar(' ');
+				putchar(j / 10 + '0');
+				putchar(j % 10 + '0');
+
+				if (i * 100 + j != 9899)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+
+	putchar('\n');
+
+	return 0;
 }
