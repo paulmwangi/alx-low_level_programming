@@ -1,8 +1,6 @@
 #include <unistd.h>
 #include <string.h>
 #include <fcntl.h>
-#include <sys/types.h>
-#include <sys/stat.h>
 
 /**
  * main - Entry point of the program
@@ -21,11 +19,11 @@ int main(void)
 
     fd = open("/dev/stderr", O_WRONLY);
     if (fd == -1)
-        return 1;
+        return (1);
 
     if (write(fd, message, len) != len)
-        return 1;
+        return (1);
 
     close(fd);
-    return 1;
+    return (1);
 }
