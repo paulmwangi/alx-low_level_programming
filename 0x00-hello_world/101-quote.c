@@ -7,7 +7,8 @@
  *
  * This program prints the message "and that piece of art is useful" - Dora Korpar, 2015-10-19,"
  * followed by a new line, to the standard error using the write system call. It demonstrates how
- * to write output directly to the standard error without using printf or puts functions.
+ * to write output directly to the standard error without using printf or puts
+ * functions.
  *
  * Return: Always 1 (indicating failure)
  */
