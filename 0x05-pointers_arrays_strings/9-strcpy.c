@@ -8,7 +8,6 @@
  * Description: copies string pointed to by src
  * Return: return pointer
  */
-
 char *_strcpy(char *dest, char *src)
 {
 	int i;
