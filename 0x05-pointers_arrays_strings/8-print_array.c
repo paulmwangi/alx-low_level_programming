@@ -1,40 +1,30 @@
 #include "main.h"
+#include "stdio.h"
+
 /**
- * puts_half - print half
- * @str: input string
- *
- * Description: prints half of a string
- * Return: Always (0);
+ * print_array - Print array upto n elements
+ * @a: Array to be read from
+ * @n: Number of elements to be read
+ * Return: Always 0.
  */
 
-void puts_half(char *str)
+void print_array(int *a, int n)
 {
 	int i;
-	int diff;
 
-	while (str[i] != '\0')
+	if (n > 0)
 	{
-		i++;
-	}
-	if (i % 2 == 1)
-	{
-		diff = (i + 1) / 2;
-
-		while (str[diff] != '\0')
+		for (i = 0 ; n > i; i++)
 		{
-			_putchar(str[diff]);
-			diff++;
+			if (i != n - 1)
+			{
+				printf("%d, ", a[i]);
+			}
+			else
+			{
+				printf("%d", a[i]);
+			}
 		}
 	}
-	else
-	{
-		diff = (i / 2);
-
-		while (str[diff] != '\0')
-		{
-			_putchar(str[diff]);
-			diff++;
-		}
-	}
-	_putchar('\n');
+	printf("\n");
 }
