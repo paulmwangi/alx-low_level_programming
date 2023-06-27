@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_array - print array
  * @dest: character pointer
