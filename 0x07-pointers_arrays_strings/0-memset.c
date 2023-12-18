@@ -1,4 +1,10 @@
+/*
+ * File: 0-memset.c
+ * Auth: not
+ */
+
 #include "main.h"
+
 /**
 *_memset - The _memset() function fills
 * the first n bytes of the memory area
@@ -17,5 +23,4 @@ char *_memset(char *s, char b, unsigned int n)
 		n--;
 	}
 	return (s);
-
 }
