@@ -1,24 +1,19 @@
+#include <stdio.h>
 #include <unistd.h>
-#include <fcntl.h>
-#include <sys/syscall.h>
 
 /**
- * main - Entry point of the program
- *
- * This program prints the message "and that piece of art is useful" - Dora Korpar, 2015-10-19,"
- * followed by a new line, to the standard error using the write system call. It demonstrates how
- * to write output directly to the standard error without using printf or puts
- * functions.
- *
- * Return: Always 1 (indicating failure)
- */
+* main - prints out a string using write
+* Description: Program that prints out the string s followed by a new line
+* Return: int 0 when done and no errors.
+* Could not use any system calls. Or any standard library functions.
+* Used write tooutput to stderror. Could have tried a method with 2>
+* the bit field is 59. I tried 58, cut off, I tried 60, 61, and higher and
+* it just won't pass because there are prob other things in buffer
+*/
+
 int main(void)
 {
-    const char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-    ssize_t len = sizeof(message) - 1;
-
-    if (syscall(SYS_write, STDERR_FILENO, message, len) != len)
-        return 1;
-
-    return 1;
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n"
+	, 59);
+	return (1);
 }
